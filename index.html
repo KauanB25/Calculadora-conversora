@@ -11,7 +11,7 @@
       
         <div class="container">
             <div class="calculator">
-                <div id="result"></div>
+                <p id="resultado"></p> 
                 <table>
                     <tr>
                         <td><button class="button">c</button></td>
@@ -20,21 +20,21 @@
                         <td><button class="button">x</button></td>
                     </tr>
                     <tr>
-                        <td><button class="button">1</button></td>
-                        <td><button class="button">2</button></td>
-                        <td><button class="button">3</button></td>
+                        <td><button class="button" onclick="inserir('1')">1</button></td>
+                        <td><button class="button" onclick="inserir('2')">2</button></td>
+                        <td><button class="button" onclick="inserir('3')" >3</button></td>
                         <td><button class="button">-</button></td>
                     </tr>
                     <tr>
-                        <td><button class="button">4</button></td>
-                        <td><button class="button">5</button></td>
-                        <td><button class="button">6</button></td>
+                        <td><button class="button" onclick="inserir('4')">4</button></td>
+                        <td><button class="button" onclick="inserir('5')">5</button></td>
+                        <td><button class="button" onclick="inserir('6')">6</button></td>
                         <td><button class="button">+</button></td>
                     </tr>
                     <tr>
-                        <td><button class="button">7</button></td>
-                        <td><button class="button">8</button></td>
-                        <td><button class="button">9</button></td>
+                        <td><button class="button" onclick="inserir('7')">7</button></td>
+                        <td><button class="button" onclick="inserir('8')">8</button></td>
+                        <td><button class="button" onclick="inserir('9')">9</button></td>
                         <td rowspan="2">
                             <button
                                 class="button"
@@ -55,5 +55,6 @@
                 </table>
             </div>
         </div>
+        <script src="assets/js/javascript.js"></script>
     </body>
 </html>
