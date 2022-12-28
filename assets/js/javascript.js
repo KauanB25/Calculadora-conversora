@@ -18,6 +18,7 @@ function inserir(num,opera=false){
 
 function limpar(num){
     document.getElementById('resultado').innerHTML=""
+    operador=0
 }
 function multiplicar(num){
     const resultado_anterior= document.getElementById('resultado').textContent
