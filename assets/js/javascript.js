@@ -1,7 +1,7 @@
 let operador=0
+let real=Void
 
-
-function inserir(num,opera=false){
+function inserir(num,opera=false,multi=false){
     console.log(operador)
     if(opera==true){
         operador+=1
@@ -16,11 +16,12 @@ function inserir(num,opera=false){
     document.getElementById('resultado').innerHTML = numero + num;}
 
 
+
 function limpar(num){
     document.getElementById('resultado').innerHTML=""
     operador=0
 }
-function multiplicar(num){
+/*function multiplicar(num){
     const resultado_anterior= document.getElementById('resultado').textContent
     inserir('x')
     console.log(resultado_anterior)
@@ -28,7 +29,7 @@ function multiplicar(num){
     let real=resultado_anterior + '*'
     console.log(real)
 
-}
+}*/
 function reset()
         {
             var resultado = document.getElementById('resultado').innerHTML;
