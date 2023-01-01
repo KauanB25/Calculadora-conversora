@@ -1,5 +1,5 @@
 let operador=0
-let real=Void
+let real=''
 
 function inserir(num,opera=false,multi=false){
     console.log(operador)
@@ -14,6 +14,9 @@ function inserir(num,opera=false,multi=false){
     
     var numero = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = numero + num;}
+    if(multi==true){
+
+    }
 
 
 
