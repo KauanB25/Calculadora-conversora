@@ -43,6 +43,7 @@ function calcular()
             if(resultado)
             {
                 let real=resultado.replace('x','*');
+                real=real.replace(',','.');
                 console.log(real);
                 document.getElementById('resultado').innerHTML = eval(real);
             }
