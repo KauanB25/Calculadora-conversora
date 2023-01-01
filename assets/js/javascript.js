@@ -1,8 +1,8 @@
 let operador=0
 let real=''
 
-function inserir(num,opera=false,multi=false){
-    console.log(operador)
+function inserir(num,opera=false, multi=false){
+    //console.log(operador)
     if(opera==true){
         operador+=1
         if(operador>=2){
@@ -10,14 +10,12 @@ function inserir(num,opera=false,multi=false){
         }
         opera=false
     }
-    console.log(operador)
+    //console.log(operador)
     
     var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;}
-    if(multi==true){
-
+    document.getElementById('resultado').innerHTML = numero + num;
+    console.log(multi)
     }
-
 
 
 function limpar(num){
@@ -39,11 +37,14 @@ function reset()
             document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
         }
 function calcular()
+
         {   
             var resultado = document.getElementById('resultado').innerHTML;
             if(resultado)
             {
-                document.getElementById('resultado').innerHTML = eval(resultado);
+                let real=resultado.replace('x','*');
+                console.log(real);
+                document.getElementById('resultado').innerHTML = eval(real);
             }
             else
             {
