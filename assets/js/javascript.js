@@ -1,5 +1,5 @@
 let operador=0
-let real=''
+
 
 function inserir(num,opera=false, multi=false){
     if(opera==true){
