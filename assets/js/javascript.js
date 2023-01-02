@@ -15,7 +15,6 @@ function inserir(num,opera=false, multi=false){
     console.log(multi)
     }
 
-
 function limpar(num){
     document.getElementById('resultado').innerHTML=""
     operador=0
