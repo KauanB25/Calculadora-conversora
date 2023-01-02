@@ -37,10 +37,7 @@ function calcular()
                 console.log(real);
                 document.getElementById('resultado').innerHTML = eval(real);
             }
-            else
-            {
-                document.getElementById('resultado').innerHTML = "Nada..."
-            }
+            
             operador-=1
         }
 
