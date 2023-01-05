@@ -1,5 +1,5 @@
 let operador=0
-
+let html_resultado=document.getElementById('resultado')
 
 function inserir(num,opera=false, multi=false){
     if(opera==true){
@@ -10,31 +10,31 @@ function inserir(num,opera=false, multi=false){
         opera=false
     }
     
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
+    var numero = html_resultado.innerHTML;
+    html_resultado.innerHTML = numero + num;
     console.log(multi)
     }
 
 function limpar(num){
-    document.getElementById('resultado').innerHTML=""
+    html_resultado.innerHTML=""
     operador=0
 }
 
 function reset()
         {
-            var resultado = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+            var resultado = html_resultado.innerHTML;
+            html_resultado.innerHTML = resultado.substring(0, resultado.length -1);
         }
 function calcular()
 
         {   
-            var resultado = document.getElementById('resultado').innerHTML;
+            var resultado = html_resultado.innerHTML;
             if(resultado)
             {
                 let real=resultado.replace('x','*');
                 real=real.replace(',','.');
                 console.log(real);
-                document.getElementById('resultado').innerHTML = eval(real);
+                html_resultado.innerHTML = eval(real);
             }
             
             operador-=1
