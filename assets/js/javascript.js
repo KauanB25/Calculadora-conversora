@@ -1,14 +1,24 @@
 let operador=0
 let html_resultado=document.getElementById('resultado')
 let ver_num=true
+let contador=0
 
 function inserir(num,opera=false){
     console.log(ver_num)
     if(num==',' && ver_num==true){
         return html_resultado.innerHTML;
-    }
+    }else{
+        if(num==',' && ver_num==false){
+        console.log(contador)    
+        if(contador>=1){
+            return html_resultado.innerHTML;
+            }
+            contador+=1;}
+        }
+    
     if(opera==true){
         operador+=1
+        contador=0
         if(operador>=2){
             calcular()
         }
@@ -23,6 +33,7 @@ function inserir(num,opera=false){
 function limpar(num){
     html_resultado.innerHTML=""
     operador=0
+    ver_num=true
 }
 
 function reset()
