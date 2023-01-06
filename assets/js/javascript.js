@@ -1,7 +1,7 @@
 let operador=0
 let html_resultado=document.getElementById('resultado')
 
-function inserir(num,opera=false, multi=false){
+function inserir(num,opera=false){
     if(opera==true){
         operador+=1
         if(operador>=2){
