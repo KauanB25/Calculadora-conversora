@@ -1,7 +1,12 @@
 let operador=0
 let html_resultado=document.getElementById('resultado')
+let ver_num=true
 
 function inserir(num,opera=false){
+    console.log(ver_num)
+    if(num==',' && ver_num==true){
+        return html_resultado.innerHTML;
+    }
     if(opera==true){
         operador+=1
         if(operador>=2){
@@ -12,7 +17,7 @@ function inserir(num,opera=false){
     
     var numero = html_resultado.innerHTML;
     html_resultado.innerHTML = numero + num;
-    console.log(multi)
+    ver_num=isNaN(num)
     }
 
 function limpar(num){
