@@ -4,12 +4,10 @@ let ver_num=true
 let contador=0
 
 function inserir(num,opera=false){
-    console.log(ver_num)
     if(num==',' && ver_num==true){
         return html_resultado.innerHTML;
     }else{
-        if(num==',' && ver_num==false){
-        console.log(contador)    
+        if(num==',' && ver_num==false){   
         if(contador>=1){
             return html_resultado.innerHTML;
             }
@@ -49,10 +47,8 @@ function calcular()
             {
                 let real=resultado.replace('x','*');
                 real=real.replace(',','.');
-                console.log(real);
                 html_resultado.innerHTML = eval(real);
             }
-            
             operador-=1
         }
 
