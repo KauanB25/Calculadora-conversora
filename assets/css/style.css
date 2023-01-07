@@ -4,8 +4,7 @@
     font-size: 25px;
 }
 .container {
-    background-color: aqua;
-    background-image: url(../images/background.jfif);
+    background-color: #1e81b0;
     height: 100vh;
     color: #000;
     font-family: Arial;
@@ -30,13 +29,11 @@
     font-size: 25px;
     margin: 3px;
     border: none;
-  
 }
-button:hover{
-    background-color: #4dc8b8;
+button:hover {
+    background-color: #1886b7;
 }
-#result {
-    
+#resultado {
     width: 280px;
     height: 30px;
     margin: 5px;

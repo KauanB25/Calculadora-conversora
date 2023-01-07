@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <title>calculadora2</title>
+        <title>calculadora</title>
     </head>
     <body>
       
         <div class="container">
-            <div class="calculator">
-                <p id="resultado"></p> 
+            <div class="calculator"> 
+                <p id="resultado"></p>
                 <table>
                     <tr>
-                        <td><button class="button" onclick="limpar()">c</button></td>
-                        <td id="botao_reset"><button class="button" onclick="reset()">reset</button></td>
+                        <td><button class="button" onclick="limpar()">AC</button></td>
+                        <td id="botao_reset"><button class="button" onclick="reset()">C</button></td>
                         <td><button class="button" onclick="inserir('/',opera=true)">/</button></td>
-                        <td id="multiplicar"><button class="button" onclick="inserir('x',opera=true,multi=true)">x</button></td>
+                        <td><button class="button" onclick="inserir('x',opera=true)">x</button></td>
                     </tr>
                     <tr>
                         <td><button class="button" onclick="inserir('1')">1</button></td>
